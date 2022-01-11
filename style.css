@@ -10,31 +10,24 @@ body{
 .wrapper{
     width: 100%;
     max-width: 960px;
-    margin: 0 auto;
 }
 
-.flex-container{
-   display: flex;
-    background: white;
+#blocks{
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
 }
 
-.box{
-    height: 100px;
-    min-width: 100px; 
+#blocks div{
+    flex: 0 0 100px;
+    padding: 40px 0;
+    text-align: center;
+    background: #ccc;
 }
 
-.one{
-    background: red;
-    flex-grow: 1;
-}
+.one{order: 3;}
+.two{order: 2;}
+.three{order: 1;}
+.one{order: 0;}
 
-.two{
-    background: blue;
-    flex-grow: 3;
-}
-
-.three{
-    background: green;
-    flex-grow: 2;
-}
 
